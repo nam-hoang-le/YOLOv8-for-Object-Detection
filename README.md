@@ -1,23 +1,28 @@
-# YOLOv8-for-Object-Detection
+# YOLOv8 for Object Detection
 
 ## Overview
+This repository focuses on utilizing YOLOv8 from the Ultralytics library to train an object detection model with a specific dataset.
 
-In this repository, I used YOLOv8 from ultralytics library to train with this [dataset](https://drive.google.com/file/d/1sX9qmlPY1SXwboz9qOzjyLrkzCwYoT31/view).
+### Dataset Details:
+- Dataset: Car detection folder
+- Images: 371 images
+- Split: 345 for training, 26 for testing
+- Folder Structure:
+    - val: Contains images and labels folders (26 files each)
+    - train: Contains images and labels folders (345 files each)
+- data.yml: File containing dataset information for model loading
+Additionally, the repository includes uploaded training model weights and a cloned model from Ultralytics.
 
-The dataset is a car detection folder including 371 images, splitting into 345 for training and 26 for testing.
-
-The dataset folder contains one files and two folders: 
-- val folder contains images folder and labels folder, which has 26 files for each. 
-- train folder contains images folder and labels folder, which has 345 files for each. 
-- data.yml file contains information about the dataset for model to load.
-
-I also uploaded the training model weights and the cloning model from ultralytics. 
-
-The model would make the prediction and then the visualize_bbox functions will show the results and the bounding boxes of the object.
+The model makes predictions, and the visualize_bbox function displays the results along with bounding boxes of the detected objects.
 
 ## Outline
-This project contains these processes: 
-1. Load dataset 
-2. Model training 
-3. Model evaluation 
+This project encompasses the following processes:
+
+1. Load dataset
+2. Model training
+3. Model evaluation
 4. Prediction
+
+Feel free to explore the repository to understand the implementation and results of YOLOv8 for object detection with the provided dataset.
+
+
